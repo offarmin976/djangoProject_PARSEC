@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algo</title>
+</head>
+<body>
+{% if ident %}
+{# Ausführungsergebnis... #}
+    Ausführung für Aktie <span style="font-weight: bold">{{ ident }}</span> angefordert.
+{% else %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Ausführen!</button>
+    </form>
+{% endif %}
+</body>
+</html>

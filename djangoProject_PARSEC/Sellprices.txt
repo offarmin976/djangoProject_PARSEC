@@ -1,0 +1,3 @@
+Date
+2022-05-27    145.389999
+Name: Open, dtype: float64
