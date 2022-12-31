@@ -1,11 +1,45 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
-    <title>Algo</title>
+    <title>PARSEC ALGO</title>
 </head>
+
 <body>
-{% if ident %}
+
+<img style="width: 250px; height: 250px; position: absolute; top: 0px; right: 0px"
+     alt ="Logo"
+     src = "{% static 'parsec22.png' %}"/>
+<br>
+<style>
+    p {
+        font-family: "Fira Code"
+    }
+
+
+</style>
+FH CAMPUS WIEN / CSDCBB23
+<br>
+<br>
+<br>
+Performanceanalyse von Konjukturindikatoren-Algorithmen
+<br>
+© Historic Market Data by Yahoo Finance / Bloomberg FIX Engine.
+<br>
+<br>
+<br>
+STRICKT FÜR TESTZWECKE / LIZENZIERT FÜR ARMIN BAJRICA
+<br>
+<br>
+Szenario: IN: Full Cash -> Aktien  - OUT: Aktien - Full Cash.
+ <br> <br> <br> <br>--- UNDER CONSTRUCTION ---<br> <br>
+
+
+
+{% if svg %}
 {# Ausführungsergebnis... #}
     Ausführung für Aktie <span style="font-weight: bold">{{ ident }}</span> angefordert.
 {% else %}
@@ -15,5 +49,9 @@
         <button type="submit">Ausführen!</button>
     </form>
 {% endif %}
+<p>
+    {%  load static %} <img src="{%  static "/Users/arminbajrica/PycharmProjects/djangoProject_PARSEC/djangoProject_PARSEC/myImagePDF.pdf" %}" />
+
+</p>
 </body>
 </html>
